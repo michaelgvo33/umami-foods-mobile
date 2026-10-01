@@ -34,7 +34,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#FFFFFF",
     alignItems: "center",
     justifyContent: "center",
-    paddingHorizontal: 30,
   },
 
   logoContainer: {
@@ -73,6 +72,5 @@ const styles = StyleSheet.create({
     bottom: 40,
     fontSize: 12,
     color: "#666666",
-    textAlign: "center",
   },
 });
