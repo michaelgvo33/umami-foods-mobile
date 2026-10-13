@@ -1,13 +1,14 @@
+import { router } from "expo-router";
 import { useState } from "react";
 import {
-    Alert,
-    KeyboardAvoidingView,
-    Platform,
-    Pressable,
-    StyleSheet,
-    Text,
-    TextInput,
-    View,
+  Alert,
+  KeyboardAvoidingView,
+  Platform,
+  Pressable,
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
 } from "react-native";
 
 export default function LoginScreen() {
@@ -76,10 +77,12 @@ export default function LoginScreen() {
           </Pressable>
 
           <View style={styles.registerContainer}>
-            <Text style={styles.registerText}>Ainda não possui uma conta?</Text>
+            <Text style={styles.registerText}>
+              Ainda não possui uma conta?{" "}
+            </Text>
 
-            <Pressable>
-              <Text style={styles.registerLink}> Criar conta</Text>
+            <Pressable onPress={() => router.push("/cadastro")}>
+              <Text style={styles.registerLink}>Criar conta</Text>
             </Pressable>
           </View>
         </View>
